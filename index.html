@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate marks</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="welcome">
+        <h1>Welcome to the marks calculator</h1>
+      </div>
+      <div class="grade">
+        <h3 id="result"></h3>
+      </div>
+      <section class="main">
+        <h3 class="percentagess">Enter the Details:</h3>
+        <form onsubmit="buttons(); return false;">
+        <div class="Content">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <br />
+        </div>
+        <div class="content">
+          <label for="class"> Class:</label>
+          <input
+            type="text"
+            id="class"
+            placeholder="Enter your class"
+            required
+          />
+          <br />
+        </div>
+        <div class="content">
+          <label for="subject">Enter the marks:</label>
+          <br />
+        </div>
+        <div class="content">
+          <label for="marks1">marks1:</label>
+          <input
+            type="number"
+            id="marks1"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+          <label for="marks2">marks2:</label>
+          <input
+            type="number"
+            id="marks2"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+          <label for="marks3">marks3:</label>
+          <input
+            type="number"
+            id="marks3"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+          <label for="marks4">marks4:</label>
+          <input
+            type="number"
+            id="marks4"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+          <label for="marks5">marks5:</label>
+          <input
+            type="number"
+            id="marks5"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+          <label for="marks6">marks6:</label>
+          <input
+            type="number"
+            id="marks6"
+            value="0"
+            min="0"
+            max="100"
+            required
+          />
+
+          <br />
+        </div>
+        
+      </form>
+      </section>
+     
+      <aside class="sidebar">
+        <h2>Calculated Marks</h2>
+
+        <p id="totalMarks">Total Marks: 0/600</p>
+      </aside>
+
+      <div class="percentage">
+        <h2>Calculated Percentage</h2>
+
+        <p id="percentagess">Percentage: 0%</p>
+      </div>
+    </div>
+    <footer align="center">
+      <p>&copy; 2024 All rights reserved</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
